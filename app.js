@@ -32,6 +32,7 @@ http.createServer((request, response) => {
 		}
 
 		let contentType = types[ext] || "application/octet-stream"
+		console.log(`recurso pedido: ${file}`)
 
 		fs.readFile( dir + file, (error, content) => {
 			
